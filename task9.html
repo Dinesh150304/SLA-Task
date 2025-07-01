@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body
+    style="background-color: aqua; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+
+
+    <h1>Create Account</h1>
+    <div style="width: 50%; height:80%; background-color: white; padding: 20px; display: flex;">
+
+
+
+        <div style="width: 50%; height:100%;">
+            <!-- First name  -->
+            <label for="name"> First name*</label>
+            <br>
+            <input type="text" id="name" placeholder="enter your first name">
+
+            <br>
+            <label for="emai"> Email* </label>
+            <br>
+            <input type="text" id="name" placeholder="enter your email" style="width:50% ;">
+            <br>
+
+            <label for="password">Password*</label>
+            <br>
+            <input type="text" id="password" placeholder="enter your password">
+
+
+            <br>
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+
+
+
+            <br>
+            <label for="source">Source of Income</label>
+            <br>
+            <select id="source" name="source">
+                <option value="employed">Employed</option>
+                <option value="self-employed">Self-Employed</option>
+                <option value="student">Student</option>
+                <option value="business">Business</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="retired">Retired</option>
+            </select>
+
+            <br>
+            <label for="file">Upload Profile Picture</label>
+            <input type="file" id="file" name="file">
+
+            <br>
+            <label for="bio">Bio</label>
+            <br>
+            <input type="textarea" style="height: 100px; width: 200px;">
+
+        </div>
+
+
+        <div style="width: 50%; height: 100%;">
+
+
+            <label for="name"> Last name</label>
+            <br>
+            <input type="text" id="name" placeholder="enter your last name">
+
+
+            <br>
+
+            <label for="password">Confirm Password*</label>
+            <br>
+            <input type="text" id="password" placeholder="enter your password again">
+            <br>
+
+            <br>
+            <label for="hobbies">Hobbies</label>
+            <br>
+            <input type="checkbox" id="Music" name="hobbies">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="Sports" name="hobbies">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="Travel" name="hobbies">
+            <label for="travel">Travel</label>
+
+            <input type="checkbox" id="Movies" name="hobbies">
+            <label for="movies">Movies</label>
+            <br>
+
+            <label for="income">Income</label>
+            <br>
+            <input type="range" id="income" name="income" min="0" max="20000">
+            <label style="background-color: #36ad90; color: white; padding: 5px;">
+                20K
+            </label>
+            <br>
+            <label for="age">Age</label>
+            <br>
+            <input type="text" value="18">
+
+        </div>
+
+    </div>
+
+
+    </form>
+    <style>
+        label {
+            color: #36ad90;
+            font-weight: bold;
+        }
+    </style>
+</body>
+
+</html>
