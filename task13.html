@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: yellow;
+            border: 5px solid red;
+        }
+
+        .left {
+            float: left;
+            padding: 20px;
+            background-color: green;
+            height: 100%;
+            width: 60%;
+            border-right: 5px solid yellow;
+        }
+
+        .right {
+            float: left;
+            background-color: green;
+            height: 100%;
+            width: 40%;
+        }
+
+        .right-top {
+            height: 50%;
+            background-color: green;
+            border-bottom: 5px solid yellow;
+            padding: 20px;
+        }
+
+        .right-bottom {
+            height: 50%;
+            background-color: green;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">left
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <h1>right top</h1>
+            </div>
+            <div class="right-bottom">
+                <h1>right bottom</h1>
+                <br>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium autem esse iste voluptate cum ex mollitia temporibus
+                    unde eveniet omnis, vel, corrupti sed nobis consequatur quaerat
+                    ad sequi aliquid nostrum</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
