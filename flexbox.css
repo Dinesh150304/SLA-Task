@@ -1,0 +1,32 @@
+body
+{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container
+{
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: 2px dashed gray;
+    width: 500px;
+    justify-content: center;
+    display: flex;
+}
+.box
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+}
+.yellow
+{
+    background-color: yellow;
+}
+.green
+{
+    background-color: green;
+}
+
