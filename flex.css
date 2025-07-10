@@ -1,0 +1,31 @@
+body
+{
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+} 
+.container
+{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 250px;
+    border: 2px dashed gray;
+    padding: 20px;
+    justify-content: center;
+}
+.box
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+}
+.purple
+{
+    background-color: purple;
+}
+.orange
+{
+    background-color: orange;
+}
