@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .text1 {
+            color: blue;
+            transition: color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+
+        }
+
+        .text1:hover {
+            color: red;
+            transform: scale(1.2);
+        }
+
+        .text2 {
+            font-size: 2rem;
+            color: orange;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.5s ease;
+        }
+
+        .text2:hover {
+            color: aquamarine;
+            transform: translateX(20px);
+        }
+
+        .text3 {
+            font-size: 2rem;
+            color: brown;
+            cursor: pointer;
+            transition: color 0.3s ease, opacity 0.5s ease;
+            opacity: 1;
+        }
+
+        .text3:hover {
+            color: violet;
+            opacity: 0.5s;
+        }
+
+        .text4 {
+            font-size: 2rem;
+            color: pink;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+
+        .text4:hover {
+            color: deeppink;
+            animation: bounce 0.6s; 
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <h1 class="text1">This is Color Change Effect</h1>
+    <h1 class="text2">This is Slide Effect</h1>
+    <h1 class="text3"> This is Fade Effect</h1>
+    <h1 class="text4">This is Bounce Effect</h1>
+</body>
+
+</html>
