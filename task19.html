@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text1 {
+            font-size: 3rem;
+            color: brown;
+            opacity: 0;
+            animation: fadeInText 2s ease-in forwards;
+            cursor: pointer;
+        }
+
+        @keyframes fadeInText {
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+        .text2 {
+            font-size: 3rem;
+            color: chartreuse;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.5s ease;
+        }
+
+        .text2:hover {
+            color: cornflowerblue;
+            transform: translateX(20px);
+        }
+
+        .text3 {
+            font-size: 3rem;
+            color: coral;
+            cursor: pointer;
+            transition: color 0.3s;
+            display: inline-block;
+        }
+
+        .text3:hover {
+            color: pink;
+            animation: bounce 0.6s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class=text1>Fades In</h1>
+    <h1 class="text2">Slide From Left</h1>
+    <h1 class="text3">Bounce Slight</h1>
+</body>
+
+</html>
