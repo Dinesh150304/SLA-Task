@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Grade Evaluator</title>
+</head>
+<body>
+  <h2>Student Grade Evaluation</h2>
+
+  <label for="marks">Enter Total Marks (0 - 100):</label>
+  <input type="number" id="marks" placeholder="Enter marks"><br><br>
+
+  <label for="finalExam">Is this a Final Exam?</label>
+  <input type="checkbox" id="finalExam"><br><br>
+
+  <button onclick="evaluateGrade()">Check Grade</button>
+
+  <p id="result"></p>
+
+  <script>
+    function evaluateGrade() {
+      const marks = parseFloat(document.getElementById("marks").value);
+      const isFinalExam = document.getElementById("finalExam").checked;
+
+      if (isNaN(marks) || marks < 0 || marks > 100) {
+        document.getElementById("result").textContent = "Please enter valid marks between 0 and 100.";
+        return;
+      }
+
+      let isAPlus;
+
+      if (isFinalExam) {
+        isAPlus = marks >= 90;
+      } else {
+        isAPlus = marks >= 89 && marks <= 100;
+      }
+
+      document.getElementById("result").textContent = isAPlus ? "true (Grade: A+)" : "false (Grade: Below A+)";
+    }
+  </script>
+</body>
+</html>
